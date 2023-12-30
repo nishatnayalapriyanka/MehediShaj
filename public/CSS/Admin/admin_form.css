@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../../Project Image/form_background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(80vh - 4px);
+    /*max-height: calc(180vh - 2px);*/
+    margin: 5vh 150px;
+    padding: 5vh;
+    width: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+    border-radius: 20px;
+}
+
+.heading_box {
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_box {
+    width: 65%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 30px;
+    color: green;
+}
+
+.sub_title {
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 20px;
+    color: yellowgreen;
+}
+
+.text {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+.text a {
+    text-decoration: none;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+.las {
+    font-size: 30px;
+    color: yellowgreen;
+}
+
+.input_box {
+    height: 35px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input {
+    height: 100%;
+    width: 85%;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    background-color: transparent; 
+    border: 1px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+    text-indent: 15px;
+    border-radius: 20px;
+}
+
+.input::placeholder {
+    color: yellowgreen;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.button {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+    background-color: yellowgreen;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 8px 30px;
+    transform: translateX(12px);
+}   
+
+.button:hover {
+    cursor: pointer;
+}
+
+.errorMsg {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    color: red;
+    text-align: center;
+}
+
+.fa-phone{
+    font-size: 13px;
+    color: green;
+}
+
+/*select*/
+.s-hidden {
+    visibility: hidden;
+    padding-right: 10px;
+}
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    width: 170px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid yellowgreen;
+    text-indent: 5px;
+    margin-left: 5px;
+}
+.styledSelect {
+    position:absolute;
+    top: 3px;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:transparent;
+    padding:0 10px;
+}
+.styledSelect::after {
+    content:"";
+    width:0;
+    height:0;
+    border:10px solid transparent;
+    border-color:yellowgreen transparent transparent transparent;
+    position:absolute;
+    top:8px;
+    right:15px;
+}
+.styledSelect:active, .styledSelect.active {
+    background-color:transparent;
+}
+.options {
+    display:none;
+    position:absolute;
+    top:calc(100% + 5px);;
+    right:0;
+    left:0;
+    z-index:999;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border:1px solid white;
+    background-color:white;
+    box-shadow:0 0px 15px yellowgreen;
+}
+.options li {
+    padding:0 6px;
+    margin:0 0;
+    padding:0 10px;
+}
+.options li:hover {
+    background-color:yellowgreen;
+    color:white;
+}

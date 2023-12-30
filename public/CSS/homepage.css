@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*navigtion*/
+nav {
+    height: 65px;
+    width: 100%;
+    z-index: 20;
+    top: 0;
+    position: fixed;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.nav_left, .nav_right {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_left {
+    width: 50%;
+}
+
+.nav_right {
+    width: 20%;
+}
+
+.nav_left a, .nav_right a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav_left a:hover, .nav_right a:hover {
+    color: green;
+}
+
+.nav_left .logo {
+    width: 15%;
+}
+
+/*banner*/
+section.banner {
+    background-image: url('../../Project Image/banner.png');
+    background-repeat: no-repeat;
+    background-size: 86% 100%;
+    margin: 0;
+    padding: 0;
+    transform: translateY(65px);
+    height: 500px;
+    width: calc(100% - 2px);
+    position: relative;
+}
+
+.banner_gif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+.banner_henna_bowl {
+    position: absolute;
+    top: 350px;
+    right: 250px;
+    height: 250px;
+}
+
+.banner_artist {
+    position: absolute;
+    top: 140px;
+    left: 220px;
+    height: 180px;
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+}
+
+.artist_account {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    height: 180px;
+    width: 26%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 350px;
+    left: 150px;
+}
+
+.artist_account p {
+    font-family: 'Calibri';
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #00BF41;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.artist_account div {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.artist_account div a{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    border-radius: 10px;    
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;   
+}
+
+
+/*heading*/
+.heading {
+    font-family: 'Pristina';
+    font-size: 50px;
+    animation: 3s logo_text infinite;
+    text-align: center;
+    transform: translateY(65px);
+}
+
+@keyframes logo_text {
+    0% {
+        text-shadow: 0 0 10px green, 0 0 20px yellowgreen,0 0 30px yellowgreen, 0 0 40px yellowgreen,0 0 50px yellowgreen, 0 0 60px yellowgreen,0 0 70px yellowgreen, 0 0 80px yellowgreen;
+    }
+
+    50% {
+        text-shadow: 0 0 10px red, 0 0 20px orange,0 0 30px orange, 0 0 40px orange,0 0 50px orange, 0 0 60px orange,0 0 70px orange, 0 0 80px orange;
+    }
+
+    100% {
+        text-shadow: 0 0 10px green, 0 0 20px yellowgreen,0 0 30px yellowgreen, 0 0 40px yellowgreen,0 0 50px yellowgreen, 0 0 60px yellowgreen,0 0 70px yellowgreen, 0 0 80px yellowgreen;
+    }
+}
+
+/*section*/
+section {
+    /*border: 1px solid black;*/
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(65px);
+}
+
+/*About_Us*/
+.About_Us {
+    height: 200px;
+}
+
+.About_Us p {
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    text-align: center;
+}
+
+.About_Us img {
+    height:100%;
+}
+
+/*Packages*/
+.Packages img {
+    margin: 20px;
+    height: 450px;
+    width: calc((100% / 2) - 40px);
+}
+
+/*Gallery*/
+.Gallery {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.Gallery  img {
+    box-shadow: 0px 0px 5px yellowgreen;
+    margin: 20px;
+    height: 220px;
+    width: calc((100% / 4) - 40px);
+}
+
+/*Ratings*/
+.Ratings {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.feedback {
+    box-shadow: 0px 0px 5px yellowgreen;
+    margin: 20px;
+    height: 150px;
+    width: calc((100% / 3) - 80px);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: "Times New Roman";
+    font-size: 20px;  
+}
+
+.fa-star {
+    font-size: 15px;
+    -webkit-text-stroke: 1px green;
+}
+
+/*Error*/
+.Error p {
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+
+.fa-circle-exclamation {
+    font-size: 25px;
+}
+
+/*footer*/
+#Contact_Us {
+    height: 350px;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact_Us .Contact_Us {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Contact_Us .Contact_Us .contact_us_container {
+    width: 30%;
+    height: 80%;
+}
+
+#Contact_Us .Contact_Us .contact_us_container h1 {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Pristina';
+    font-size: 45px;
+    text-align: center;
+}
+
+#Contact_Us .Contact_Us .contact_us_container p {
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    transform: translateX(12px);
+}
+
+#Contact_Us .Contact_Us .contact_us_container p a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#Contact_Us .Contact_Us .contact_us_container .follow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Contact_Us .Contact_Us .contact_us_container .follow a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#Contact_Us .footer {
+    box-shadow: 0px -2px 15px green;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#Contact_Us .footer p {
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 22px;
+    transform: translateX(-30px);
+}
+
+.top-arrow {
+    position: fixed;
+    bottom: 40px;
+    right: 26px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.messenger {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

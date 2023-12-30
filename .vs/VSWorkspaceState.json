@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\CSS",
+    "\\public\\CSS\\Admin",
+    "\\public\\CSS\\Artist",
+    "\\public\\CSS\\Customer",
+    "\\public\\JS",
+    "\\resources",
+    "\\resources\\views",
+    "\\resources\\views\\Admin"
+  ],
+  "SelectedNode": "\\public\\CSS\\Customer\\customer_help.css",
+  "PreviewInSolutionExplorer": false
+}

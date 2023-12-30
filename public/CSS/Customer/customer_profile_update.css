@@ -1,0 +1,155 @@
+.profile_pic {
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.profile_pic #profile_pic {
+    position: absolute;
+    visibility: hidden;
+}
+
+.profile_pic label {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border:1px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+}
+
+.profile_pic label {
+    cursor: pointer;
+}
+
+.profile_pic label #preview {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.profile_pic label .preview {
+    z-index: 1;
+    position: absolute;
+    transform: translateX(120px)translateY(110px);
+}
+
+.inputbox {
+    box-shadow: 0px 0px 15px yellowgreen;
+    width: 60%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;  
+}
+
+.inputbox .input_title {
+    color: green;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.inputbox .input_title:hover {
+    cursor: pointer;
+}
+
+.inputbox .input,.inputbox select {
+    width: 80%;
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    margin-left: 100px;
+}
+
+.inputbox select {
+    width: 30%; 
+}
+
+#select {
+    position: relative;
+}
+
+.inputbox .input:focus {
+    outline: none;
+    text-align: center;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.inputbox select:focus {
+    outline: none;
+    top: 60px;
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px yellowgreen;
+    z-index: 1;
+    position: absolute;
+    overflow: visible;
+}
+
+.inputbox select option:hover,.inputbox select option:checked {
+    box-shadow: 0 0 10px 100px green inset;
+    color: white;
+    cursor: pointer;
+}
+
+
+.errorMsg {
+    color: red;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    margin-left: 50px;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+
+/*auto complete address*/
+.autocomplete-container {
+    position: relative;
+}
+
+.autocomplete-items {
+    width: 30%;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    box-shadow: 0 0 10px yellowgreen;
+    border-top: none;
+    background-color: white;
+    z-index: 99;
+    top: calc(100% + 2px);
+    margin-left: 200px;
+    display: none;
+}
+
+.autocomplete-items div {
+    color: green;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.autocomplete-items div:hover {
+    color: white;
+    background-color: green;
+}

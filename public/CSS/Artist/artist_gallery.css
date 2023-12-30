@@ -1,0 +1,127 @@
+.artist_add_gallery_Upload {
+    border: 2px dashed green;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+.artist_add_gallery_Upload:hover{
+    cursor: pointer;
+}
+
+.artist_add_gallery_Upload input {
+    visibility: hidden;
+    position: absolute;
+}
+
+#preview_gallery {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+.artist_add_gallery_Upload i {
+    font-size: 80px;
+    color: green;
+    position: absolute;
+    top: 50px;
+}
+
+.artist_add_gallery_Upload p {
+    font-weight: bold;
+    color: green;
+    position: absolute;
+    bottom: 50px;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    margin-left: 50px;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+
+.gallery_conatiner {
+    margin-left: 40px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery_conatiner form{
+    height: 200px;
+    width: calc((100% / 4) - 30px);
+    position: relative;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_conatiner form label{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_conatiner form label:hover {
+    cursor: pointer;
+}
+
+.gallery_conatiner form label img.gallery_photo {
+    position: absolute;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    border: 5px solid white;
+    box-shadow: 0 0px 10px green;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    display: none;
+}
+
+.image_button {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label {
+    height: calc(100% + 20px);
+    width: calc(100% + 20px);
+}
+
+input[type="checkbox"]:checked + label .image_button {
+    display: initial;
+    position: absolute;
+    z-index: 2;
+    background-color: green;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translateX(135px) translateY(-107px);
+}
+
+
+

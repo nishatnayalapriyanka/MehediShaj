@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header_container {
+    margin: 30px;
+    width: calc(100% - 60px);
+    border-bottom: 5px double green;
+}
+
+.header {
+    width: 100%;
+    
+}
+
+.header_left {
+    padding-left: 20px;
+}
+
+.contact {
+    font-family: 'Times New Roman';
+    font-size: 20px;  
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.header_right {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.appointment_customer_container {
+    margin: 30px;
+    width: calc(100% - 60px);
+}
+
+.appointment_customer {
+    width: 100%;
+}
+
+.appointment_header, .customer_header {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: green;
+}
+
+.gap{
+    width: 50px;
+}
+
+.appointment, .customer, .payment {
+    vertical-align: top;
+}
+
+.appointment p, .customer p, .payment p {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 3px 0;
+}
+
+.sub_title{
+    color: yellowgreen;
+}
+
+.service_container {
+    margin: 30px;
+    width: calc(100% - 60px);
+}
+
+.service {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.service_header {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    text-align: center;
+}
+
+.service_headers {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: yellowgreen;
+    border: 1px solid white;
+}
+
+.service_data {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding: 10px 20px;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.payment_calculation {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    padding: 10px;
+    text-align: right;
+}
+
+.payment_calculation_value {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding: 10px;
+}
+
+

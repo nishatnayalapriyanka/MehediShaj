@@ -1,0 +1,55 @@
+.booking {
+    margin-left: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.artist {
+    height: 250px;
+    width: calc((100% / 4) - 40px);
+    margin: 20px;
+    box-shadow: 0px 0px 5px yellowgreen;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.artist label {
+    height: 100%;
+    width: 100%;  
+}
+
+.artist label:hover {
+    cursor: pointer;  
+}
+
+.artist  img {
+    height: 74%;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.artist  p {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    color: green;
+    margin-left: 20px;
+}
+
+.artist  p i{
+    color: yellowgreen;
+    font-size: 14px;
+    -webkit-text-stroke: 1px green;
+}
+
+.artist  p span{
+    color: yellowgreen;
+    font-size: 15px;
+}
+
+.button {
+    display: none;
+}
+

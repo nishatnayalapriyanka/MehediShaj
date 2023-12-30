@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../../Project Image/form_background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(80vh - 4px);
+    /*max-height: calc(180vh - 2px);*/
+    margin: 5vh 150px;
+    padding: 5vh;
+    width: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+    border-radius: 20px;
+}
+
+.form .artist_pic {
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+}
+
+.heading_box {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_box {
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+}
+
+.title {
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 30px;
+    color: green;
+}
+
+.sub_title {
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+.text {
+    font-family: "Times New Roman";
+    font-size: 18px;
+}
+
+.text a {
+    text-decoration: none;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+.fa-star {
+    -webkit-text-stroke: 1px green;
+    font-size: 15px;
+    color: yellowgreen;
+}
+
+.profile_pic {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    position: relative;
+}
+
+.profile_pic label {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    border:1px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+}
+
+.profile_pic label #preview {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;   
+}
+
+.profile_pic label .preview {
+    z-index: 1;
+    position: absolute;
+    transform: translateX(75px)translateY(75px);
+}
+
+#profile_pic {
+    position: absolute;
+    visibility: hidden;
+}
+
+.input_box {
+    height: 35px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input {
+    height: 100%;
+    width: 85%;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    background-color: transparent; 
+    border: 1px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+    text-indent: 15px;
+    border-radius: 20px;
+}
+
+.input::placeholder {
+    color: yellowgreen;
+}
+
+.input:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    border: 1px solid green;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: green;
+    background-image: url('https://img.icons8.com/tiny-glyph/32/FFFFFF/checkmark.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cart {
+    position: relative;
+    text-align: center;
+}
+
+.stars_container {
+    height: 20px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.star{
+    display: none;
+}
+#awful, #bad, #alright, #good, #great {
+    position: absolute;
+    bottom: 30px;
+    display: none;
+}
+
+#star_one, #star_two, #star_three, #star_four, #star_five{
+    color: transparent;
+    font-size: 20px;
+}
+
+#one:checked ~ #star_one {
+    color: yellowgreen;
+}
+
+#one:checked ~ #star_two,
+#one:checked ~ #star_three,
+#one:checked ~ #star_four,
+#one:checked ~ #star_five {
+    color: transparent;
+}
+
+#one:checked ~ #awful {
+    display: block;
+}
+
+#one:checked ~ #bad,
+#one:checked ~ #alright,
+#one:checked ~ #good,
+#one:checked ~ #great {
+    display: none;
+}
+
+#two:checked ~ #star_one,
+#two:checked ~ #star_two {
+    color: yellowgreen;
+}
+
+#two:checked ~ #star_three,
+#two:checked ~ #star_four,
+#two:checked ~ #star_five {
+    color: transparent;
+}
+
+#two:checked ~ #bad {
+    display: block;
+}
+
+#two:checked ~ #awful,
+#two:checked ~ #alright,
+#two:checked ~ #good,
+#two:checked ~ #great {
+    display: none;
+}
+
+#three:checked ~ #star_one,
+#three:checked ~ #star_two,
+#three:checked ~ #star_three {
+    color: yellowgreen;
+}
+
+#three:checked ~ #star_four,
+#three:checked ~ #star_five {
+    color: transparent;
+}
+
+#three:checked ~ #alright {
+    display: block;
+}
+
+#three:checked ~ #awful,
+#three:checked ~ #bad,
+#three:checked ~ #good,
+#three:checked ~ #great {
+    display: none;
+}
+
+#four:checked ~ #star_one,
+#four:checked ~ #star_two,
+#four:checked ~ #star_three,
+#four:checked ~ #star_four {
+    color: yellowgreen;
+}
+
+#four:checked ~ #star_five {
+    color: transparent;
+}
+
+#four:checked ~ #good {
+    display: block;
+}
+
+#four:checked ~ #awful,
+#four:checked ~ #bad,
+#four:checked ~ #alright,
+#four:checked ~ #great {
+    display: none;
+}
+
+#five:checked ~ #star_one,
+#five:checked ~ #star_two,
+#five:checked ~ #star_three,
+#five:checked ~ #star_four,
+#five:checked ~ #star_five {
+    color: yellowgreen;
+}
+
+#five:checked ~ #great {
+    display: block;
+}
+
+#five:checked ~ #awful,
+#five:checked ~ #bad,
+#five:checked ~ #alright,
+#five:checked ~ #good {
+    display: none;
+}
+
+.comment {
+    height: 100px;
+    width: 400px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.comment::placeholder {
+    color: yellowgreen;
+}
+
+.comment:focus {
+    outline: none;
+}
+
+.las {
+    font-size: 30px;
+    color: yellowgreen;
+}
+
+.la-minus {
+    position: absolute;
+    width: 50px;
+    height: 37px;
+    font-size: 37px;
+    text-align: center;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 20px 0 0 20px;
+    transform: translateX(-85px);
+}
+
+.la-plus {
+    position: absolute;
+    width: 50px;
+    height: 37px;
+    font-size: 37px;
+    text-align: center;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 0 20px 20px 0;
+    transform: translateX(122px);
+}
+
+.fa-angle-right {
+    font-size: 12px;
+}
+
+.button {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+    background-color: yellowgreen;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 8px 30px;
+    transform: translateX(12px);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.errorMsg {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    color: red;
+    text-align: center;
+}
+
+/* Custom Datepicker Styles */
+.calendar_icon {
+    position: absolute;
+    transform: translateX(120px);
+    color: yellowgreen;
+    font-size: 20px;
+    z-index: 10;
+}
+#datepicker:hover {
+    cursor: pointer;
+}
+.ui-datepicker {
+    width: 240px;
+    display: none;
+    background-color: white;
+    box-shadow: 0 0 10px yellowgreen;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+}
+.ui-datepicker .ui-datepicker-calendar thead th {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 18px;
+    font-weight: bold;
+    color: yellowgreen;
+}
+.ui-datepicker .ui-datepicker-calendar tbody td {
+    width: 2.5rem;
+    text-align: center;
+    padding: 0;
+    color: green;
+    font-family: "Times New Roman";
+    font-size: 18px;
+}
+.ui-datepicker .ui-datepicker-calendar tbody td a {
+    display: block;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    transition: 0.3s all;
+    color: black;
+    font-family: "Times New Roman";
+    font-size: 18px;
+    text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-calendar tbody td a:hover {
+    background-color: #CCFD7F;
+}
+.ui-datepicker .ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: yellowgreen;
+    color: white;
+}
+.ui-datepicker .ui-datepicker-header a.ui-corner-all {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.3s all;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev {
+    left: 0;
+    background: url('https://img.icons8.com/ios-filled/12/008000/chevron-right.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: rotate(180deg);
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next {
+    right: 0;
+    background: url('https://img.icons8.com/ios-filled/12/008000/chevron-right.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.ui-datepicker .ui-datepicker-header a > span {
+    display: none;
+}
+.ui-datepicker .ui-datepicker-title {
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+    color: green;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+/*auto complete address*/
+.autocomplete-container {
+    position: relative;
+}
+.autocomplete-items {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    box-shadow: 0 0 10px yellowgreen;
+    border-top: none;
+    background-color: white;
+    z-index: 99;
+    top: calc(100% + 2px);
+    left: 0;
+    display: none;
+}
+.autocomplete-items div {
+    color: yellowgreen;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.autocomplete-items div:hover {
+    color: white;
+    background-color: yellowgreen;
+}
+/*select*/
+.s-hidden {
+    visibility:hidden;
+    padding-right:10px;
+}
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 85%;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: 0 0 10px yellowgreen;
+    text-indent: 5px;
+    border-radius: 20px;
+}
+.styledSelect {
+    position:absolute;
+    top:6px;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:transparent;
+    padding:0 10px;
+    color: yellowgreen;
+}
+.styledSelect::after {
+    content:"";
+    width:0;
+    height:0;
+    border:10px solid transparent;
+    border-color:yellowgreen transparent transparent transparent;
+    position:absolute;
+    top:8px;
+    right:15px;
+}
+.styledSelect:active, .styledSelect.active {
+    background-color:transparent;
+}
+.options {
+    display:none;
+    position:absolute;
+    top:calc(100% + 5px);;
+    right:0;
+    left:0;
+    z-index:999;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border:1px solid white;
+    background-color:white;
+    box-shadow:0 0px 15px yellowgreen;
+}
+.options li {
+    padding:0 6px;
+    margin:0 0;
+    padding:0 10px;
+}
+.options li:hover {
+    background-color:yellowgreen;
+    color:white;
+}

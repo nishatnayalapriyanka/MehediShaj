@@ -1,0 +1,98 @@
+.container {
+    box-shadow: 0 0 15px yellowgreen;
+    width: 50%;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.title {
+    color: green;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.title i{
+    font-size: 30px;
+}
+
+.fa-angle-down {
+    transform: translateX(280px)translateY(13px);
+}
+
+.fa-angle-down:hover {
+    cursor: pointer;
+}
+
+.fa-angle-right {
+    transform: translateX(60px)translateY(13px);
+}
+
+a.call {
+    text-decoration: none;
+}
+
+.call_msg {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    margin-left: 60px;
+    color: black;
+}
+
+.message_box, #message_box {
+    display: none;
+}
+
+#message_box:checked ~ .message_box {
+    display: initial;
+}
+
+#message_box:checked + .title label i.fa-angle-down {
+    transform: translateX(280px)translateY(13px) rotate(180deg);
+}
+
+.help_msg {
+    height: 100px;
+    width: 400px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid green;
+    box-shadow: 0 0 15px inset yellowgreen;
+    border-radius: 15px;
+    margin-left: 50px;
+    padding: 15px;
+}
+
+.help_msg::placeholder {
+    color: yellowgreen;
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+.help_msg:focus {
+    outline: none;
+}
+
+.errorMsg {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    color: red;
+    margin-left: 50px;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    transform: translateX(500px)translateY(-106px)
+}
+
+.button:hover {
+    cursor: pointer;
+}

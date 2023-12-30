@@ -1,0 +1,190 @@
+.sub_title {
+    color: yellowgreen;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.text {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.appointments_menu {
+    width: calc(100% + 13px);
+    background-color: white;
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(-8px)translateY(-20px);
+    border-bottom: 1px solid yellowgreen;
+}
+
+.title {
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 60px;
+    padding: 20px 10px 5px 10px;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.appointments_menu_upcoming_appointments {
+    color: green;
+    border-bottom: 3px solid green;
+}
+
+#upcoming_appointments:checked ~ .appointments_menu .appointments_menu_upcoming_appointments {
+    color: green;
+    border-bottom: 3px solid green;
+}
+
+#upcoming_appointments:checked ~ .appointments_menu .appointments_menu_all_appointments {
+    border: none;
+    color: black;
+}
+
+#upcoming_appointments, #all_appointments, .all_appointments {
+    display: none;
+}
+
+#upcoming_appointments:checked ~ .upcoming_appointments {
+    display: initial;
+}
+
+#upcoming_appointments:checked ~ .all_appointments {
+    display: none;
+}
+
+#all_appointments:checked ~ .appointments_menu .appointments_menu_upcoming_appointments {
+    border: none;
+    color: black;
+}
+
+#all_appointments:checked ~ .appointments_menu .appointments_menu_all_appointments {
+    color: green;
+    border-bottom: 3px solid green;
+}
+
+#all_appointments:checked ~ .upcoming_appointments {
+    display: none;
+}
+
+#all_appointments:checked ~ .all_appointments {
+    display: initial;
+}
+
+.appointments {
+    box-shadow: 0px 0px 15px yellowgreen;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.appointments_table {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+}
+
+.appointments_headers_left {
+    color: green;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.appointments_headers_right {
+    text-align: right;
+}
+
+.dowloadBill {
+    color: green;
+    background-color: transparent;
+    transform: translateX(710px);
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    border: 0.5px solid green;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px inset yellowgreen;
+    padding: 6px;
+}
+
+.dowloadBill:hover {
+    cursor: pointer;
+}
+
+.appointments_details {
+    padding: 10px;
+}
+
+a.call {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.payment_details {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.package_payment_table {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+    border-collapse: collapse;
+}
+
+.package_payment_headers {
+    background-color: yellowgreen;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid white;
+}
+
+.package_payment_data {
+    padding: 5px 20px;
+}
+
+.payment_calculation {
+    text-align: right;
+}
+
+.package_payment_row {
+    border-bottom: 1px solid yellowgreen;
+}
+
+.fa-phone {
+    color: green;
+    font-size: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.bill_button {
+    display: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
