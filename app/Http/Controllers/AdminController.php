@@ -21,6 +21,12 @@ use App\Models\AppointmentModel;
 use App\Models\PaymentModel;
 use App\Models\FeedbackModel;
 
+use App\Exports\AdminConfirmedAppointmentsTable;
+use App\Exports\AdminUnconfirmedAppointmentsTable;
+use App\Exports\AdminCancelledAppointmentsTable;
+use App\Exports\AdminCompletedAppointmentsTable;
+use App\Exports\AdminAllAppointmentsTable;
+
 class AdminController extends Controller
 {
 
@@ -123,6 +129,46 @@ class AdminController extends Controller
             );
             
             return view('Admin.admin_dashboard', compact('completed_appointments', 'appointments', 'current_year_monthly_income', 'confirmed_appointments', 'unconfirmed_appointments', 'cancelled_appointments'));
+        } else {
+            return redirect('/admin_login');
+        }    
+    }
+
+    public function admin_confirmed_appointments_download_excel(){
+        if (Session::has('admin_login_password')) {
+            return Excel::download(new AdminConfirmedAppointmentsTable, 'Confirmed Appointments.xlsx');   
+        } else {
+            return redirect('/admin_login');
+        }    
+    }
+
+    public function admin_unconfirmed_appointments_download_excel(){
+        if (Session::has('admin_login_password')) {
+            return Excel::download(new AdminUnconfirmedAppointmentsTable, 'Unconfirmed Appointments.xlsx');   
+        } else {
+            return redirect('/admin_login');
+        }    
+    }
+
+    public function admin_cancelled_appointments_download_excel(){
+        if (Session::has('admin_login_password')) {
+            return Excel::download(new AdminCancelledAppointmentsTable, 'Cancelled Appointments.xlsx');   
+        } else {
+            return redirect('/admin_login');
+        }    
+    }
+
+    public function admin_completed_appointments_download_excel(){
+        if (Session::has('admin_login_password')) {
+            return Excel::download(new AdminCompletedAppointmentsTable, 'Completed Appointments.xlsx');   
+        } else {
+            return redirect('/admin_login');
+        }    
+    }
+
+    public function admin_all_appointments_download_excel(){
+        if (Session::has('admin_login_password')) {
+            return Excel::download(new AdminAllAppointmentsTable, 'Appointments.xlsx');   
         } else {
             return redirect('/admin_login');
         }    

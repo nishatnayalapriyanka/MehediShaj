@@ -78,7 +78,7 @@
 
             <p class="title">
                 @if(!$confirmed_appointments->isEmpty())
-                    <a href="" class="download_excel">
+                    <a href="/admin_confirmed_appointments_download_excel" class="download_excel">
                         <i class="fa-solid fa-download"></i>Confirmed Appointments
                     </a>
                 @else
@@ -152,7 +152,7 @@
                                {{$confirmed_appointment->payment->artist_compensation_status}}
                             </td>
                             <td class= "appoinments_data">
-                                Tk {{$confirmed_appointment->payment->total_service_charge}}
+                                {{$confirmed_appointment->payment->total_service_charge}}
                             </td>
                             <td class= "appoinments_data">
                                 Tk {{$confirmed_appointment->payment->total_booking_fee}}
@@ -165,7 +165,7 @@
 
             <p class="title">
                 @if(!$unconfirmed_appointments->isEmpty())
-                    <a href="" class="download_excel">
+                    <a href="/admin_unconfirmed_appointments_download_excel" class="download_excel">
                         <i class="fa-solid fa-download"></i>Unconfirmed Appointments
                     </a>
                 @else
@@ -239,7 +239,7 @@
                                {{$unconfirmed_appointment->payment->artist_compensation_status}}
                             </td>
                             <td class= "appoinments_data">
-                                Tk {{$unconfirmed_appointment->payment->total_service_charge}}
+                               {{$unconfirmed_appointment->payment->total_service_charge}}
                             </td>
                             <td class= "appoinments_data">
                                 Tk {{$unconfirmed_appointment->payment->total_booking_fee}}
@@ -252,7 +252,7 @@
 
             <p class="title">
                 @if(!$cancelled_appointments->isEmpty())
-                    <a href="" class="download_excel">
+                    <a href="/admin_cancelled_appointments_download_excel" class="download_excel">
                         <i class="fa-solid fa-download"></i>Cancelled Appointments
                     </a>
                 @else
@@ -332,7 +332,7 @@
                                {{$cancelled_appointment->payment->artist_compensation_status}}
                             </td>
                             <td class= "appoinments_data">
-                                Tk {{$cancelled_appointment->payment->total_service_charge}}
+                                {{$cancelled_appointment->payment->total_service_charge}}
                             </td>
                             <td class= "appoinments_data">
                                 Tk {{$cancelled_appointment->payment->total_booking_fee}}
@@ -345,7 +345,7 @@
 
             <p class="title">
                 @if(!$completed_appointments->isEmpty())
-                    <a href="" class="download_excel">
+                    <a href="/admin_completed_appointments_download_excel" class="download_excel">
                         <i class="fa-solid fa-download"></i>Completed Appointments
                     </a>
                 @else
@@ -440,7 +440,7 @@
 
             <p class="title">
                 @if(!$appointments->isEmpty())
-                    <a href="" class="download_excel">
+                    <a href="/admin_all_appointments_download_excel" class="download_excel">
                         <i class="fa-solid fa-download"></i>Appointments
                     </a>
                 @else

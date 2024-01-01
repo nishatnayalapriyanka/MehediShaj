@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\File;
 use Illuminate\Validation\Rule;
 use Maatwebsite\Excel\Facades\Excel;
-use App\Exports\ArtistCompletedAppointmentsTable;
 
 
 use App\Models\CustomerModel;
@@ -19,6 +18,8 @@ use App\Models\AppointArtCusModel;
 use App\Models\AppointmentModel;
 use App\Models\PaymentModel;
 use App\Models\FeedbackModel;
+
+use App\Exports\ArtistCompletedAppointmentsTable;
 
 class ArtistController extends Controller
 {

@@ -444,7 +444,19 @@ Route::post('/admin_login', [AdminController::class,'admin_login']);
 //admin dashboard
 Route::get('/admin_dashboard', [AdminController::class,'admin_dashboard']);
 
+Route::get('/admin_confirmed_appointments_download_excel', [AdminController::class,'admin_confirmed_appointments_download_excel']);
 
+
+Route::get('/admin_unconfirmed_appointments_download_excel', [AdminController::class,'admin_unconfirmed_appointments_download_excel']);
+
+
+Route::get('/admin_cancelled_appointments_download_excel', [AdminController::class,'admin_cancelled_appointments_download_excel']);
+
+
+Route::get('/admin_completed_appointments_download_excel', [AdminController::class,'admin_completed_appointments_download_excel']);
+
+
+Route::get('/admin_all_appointments_download_excel', [AdminController::class,'admin_all_appointments_download_excel']);
 //admin manage appointments
 Route::get('/admin_search_appointments', function () {
     return redirect('/admin_dashboard');

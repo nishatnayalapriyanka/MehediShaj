@@ -1,16 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\app",
+    "\\app\\Http",
+    "\\app\\Http\\Controllers",
     "\\public",
     "\\public\\CSS",
-    "\\public\\CSS\\Admin",
-    "\\public\\CSS\\Artist",
-    "\\public\\CSS\\Customer",
     "\\public\\JS",
     "\\resources",
-    "\\resources\\views",
-    "\\resources\\views\\Admin"
+    "\\resources\\views"
   ],
-  "SelectedNode": "\\public\\CSS\\Customer\\customer_help.css",
+  "SelectedNode": "\\app\\Http\\Controllers\\CustomerController.php",
   "PreviewInSolutionExplorer": false
 }
