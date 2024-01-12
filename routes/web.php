@@ -475,3 +475,16 @@ Route::post('/admin_manage_appointment', [AdminController::class,'post_admin_man
 
 //admin logout
 Route::get('/admin_logout', [AdminController::class,'admin_logout']);
+
+
+
+/*
+php artisan make:controller ControllerName
+
+php artisan make:model ModelName
+
+php artisan make:migration create_table_name --create = table_name
+php artisan migrate
+*/
+
+

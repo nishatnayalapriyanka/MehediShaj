@@ -3,9 +3,9 @@ function drawBarChart(currentYearmonthlyIncome) {
     var labels = Object.keys(currentYearmonthlyIncome);
     var data = Object.values(currentYearmonthlyIncome);
 
-    var gradientIncomeData = ctx.createLinearGradient(0, 0, 0, 400);
-    gradientIncomeData.addColorStop(0.25, '#C1FF72'); // Start color
-    gradientIncomeData.addColorStop(1, '#00BF63');
+    var gradientColor = ctx.createLinearGradient(0, 0, 0, 400);
+    gradientColor.addColorStop(0.25, '#C1FF72'); // Top color
+    gradientColor.addColorStop(1, '#00BF63');
 
 
     var myChart = new Chart(ctx, {
@@ -16,7 +16,7 @@ function drawBarChart(currentYearmonthlyIncome) {
                 {
                     label: 'Monthly Income',
                     data: data,
-                    backgroundColor: gradientIncomeData, // Customize bar color and opacity
+                    backgroundColor: gradientColor, // Customize bar color and opacity
                     borderColor: "green", // Border color
                     borderWidth: 1
                 }              

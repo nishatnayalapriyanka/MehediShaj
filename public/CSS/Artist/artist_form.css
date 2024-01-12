@@ -211,8 +211,7 @@ input[type="checkbox"]:checked {
 
 /*select*/
 .s-hidden {
-    visibility:hidden;
-    padding-right:10px;
+    display: none;
 }
 .select {
     cursor: pointer;
@@ -247,9 +246,6 @@ input[type="checkbox"]:checked {
     position:absolute;
     top:8px;
     right:15px;
-}
-.styledSelect:active, .styledSelect.active {
-    background-color:transparent;
 }
 .options {
     display:none;

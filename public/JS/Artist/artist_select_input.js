@@ -39,17 +39,14 @@ $('select').each(function () {
     // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
     $styledSelect.click(function (e) {
         e.stopPropagation();
-        $('div.styledSelect.active').each(function () {
-            $(this).removeClass('active').next('ul.options').hide();
-        });
-        $(this).toggleClass('active').next('ul.options').toggle();
+        $list.toggle();
     });
 
     // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
     // Updates the select element to have the value of the equivalent option
     $listItems.click(function (e) {
         e.stopPropagation();
-        $styledSelect.text($(this).text()).css('color', 'black').removeClass('active');
+        $styledSelect.text($(this).text()).css('color', 'black');
         $this.val($(this).attr('rel'));
         $list.hide();
         /* alert($this.val()); Uncomment this for demonstration! */
@@ -57,8 +54,13 @@ $('select').each(function () {
 
     // Hides the unordered list when clicking outside of it
     $(document).click(function () {
-        $styledSelect.removeClass('active');
         $list.hide();
     });
 
 });
+
+
+/*In essence, e.stopPropagation() is used to confine the click events to specific
+elements and prevent them from affecting other elements */
+
+/*next()  is selecting the next sibling  */

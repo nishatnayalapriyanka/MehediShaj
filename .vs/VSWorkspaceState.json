@@ -7,9 +7,12 @@
     "\\public",
     "\\public\\CSS",
     "\\public\\JS",
+    "\\public\\JS\\Artist",
+    "\\public\\JS\\Customer",
     "\\resources",
-    "\\resources\\views"
+    "\\resources\\views",
+    "\\resources\\views\\Customer"
   ],
-  "SelectedNode": "\\app\\Http\\Controllers\\CustomerController.php",
+  "SelectedNode": "\\public\\JS\\Artist\\artist_select_input.js",
   "PreviewInSolutionExplorer": false
 }

@@ -170,9 +170,6 @@ body {
     top:8px;
     right:15px;
 }
-.styledSelect:active, .styledSelect.active {
-    background-color:transparent;
-}
 .options {
     display:none;
     position:absolute;

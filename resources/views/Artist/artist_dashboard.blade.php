@@ -295,8 +295,12 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--JavaScript library for creating charts and graphs-->
     <script>
         var $current_year_monthly_income = @json($current_year_monthly_income);
+        //json, It's often used for passing data from the
+        //server-side (like PHP or other backend languages) to the client-side JavaScript.
+
 
         // Pass data to external JS file
         window.onload = function () {
